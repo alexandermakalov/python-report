@@ -1,7 +1,12 @@
 from openpyxl import load_workbook
+import os
+
+#The function to work with a relative paths
+THIS_FOLDER = os.path.dirname(os.path.relpath(__file__))
+grafik = os.path.join(THIS_FOLDER, 'python-report-1.xlsx')
 
 # Load in the workbook
-wb = load_workbook('./python-report-1.xlsx', read_only=True)
+wb = load_workbook (grafik, read_only=True)
 
 # Get sheet names
 print(wb.sheetnames)
