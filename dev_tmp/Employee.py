@@ -1,7 +1,10 @@
 class Employee:
     def __init__(self, coordinate, number):
-        self.coordinate = coordinate
+        self.coordinate = {
+            'row': coordinate['row'],
+            'column': coordinate['column']
+        }
         self.number = number
-        self.fullName = None
+        self.full_name = None
         self.rate = None
         self.position = None
