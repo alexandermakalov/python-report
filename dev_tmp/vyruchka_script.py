@@ -7,6 +7,7 @@ import math
 import numpy as np
 import decimal
 from decimal import ROUND_UP
+import test
 print ('***АТЭНШЭН!!! ВСЕ ДРОБНЫЕ ЧИСЛА ВВОДИТЬ ТОЛЬКО ЧЕРЕЗ ТОЧКУ "."***')
 print ('')
 print('''       ОЛСО!!! ЕСЛИ КАССИРОВ ТРОЕ, то КАССИРА с НАИМЕНЬШИМ количеством отработанных ЧАСОВ вводите ПЕРВЫМ. 
