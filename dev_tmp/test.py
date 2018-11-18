@@ -75,7 +75,7 @@ def get_employee_timetable(row):
 def fill_employees(employees):
     for employee in employees:
         employee_row = employee.coordinate['row']
-        employee.full_name = get_employee_full_name(employee_row)
+        employee.name = get_employee_full_name(employee_row)
         employee.position = get_employee_position(employee_row)
         employee.rate = get_employee_rate(employee_row)
         employee.timetable = get_employee_timetable(employee_row)

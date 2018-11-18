@@ -4,7 +4,7 @@ class Employee:
             'row': coordinate['row'],
             'column': coordinate['column']
         }
-        self.number = number
-        self.full_name = None
+        self.id = number
+        self.name = None
         self.rate = None
         self.position = None
