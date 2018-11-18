@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 flask = "*"
 openpyxl = "*"
+flask-cors = "*"
 
 [dev-packages]
 

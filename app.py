@@ -3,9 +3,10 @@ from flask.json import jsonify
 from dev_tmp.test import get_employees
 from dev_tmp.Employee import Employee
 from flask.json import JSONEncoder
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 
 # A customized JSON encoder that knows about your SiteConfig class
 # TODO Really? Move to another place
@@ -25,6 +26,6 @@ def hello():
     return "Hello World!"
 
 
-@app.route("/employees")
+@app.route("/api/employees")
 def employees():
     return jsonify(get_employees())
